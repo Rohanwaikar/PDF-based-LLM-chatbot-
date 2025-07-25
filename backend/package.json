@@ -13,6 +13,7 @@
   "type": "module",
   "dependencies": {
     "@langchain/openai": "^0.6.3",
+    "axios": "^1.11.0",
     "canvas": "^3.1.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
