@@ -19,20 +19,21 @@ function App() {
   const [chat, setChat] = useState([]);
   const [input, setInput] = useState('');
   const [rawPath, setRawPath] = useState('');
+  const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleFileChange = (e) => {
     const formData = new FormData();
     formData.append('pdf', e.target.files[0]);
-    axios.post('http://localhost:5002/upload', formData)
+    axios.post(`${BASE_URL}/upload`, formData)
       .then(res => {
-        setFile(`http://localhost:5002/uploads/${res.data.filePath}`);
+        setFile(`${BASE_URL}/uploads/${res.data.filePath}`);
         setRawPath(res.data.filePath);
       });
   };
 
   const handleChat = async () => {
   try {
-    const res = await axios.post('http://localhost:5002/chat', {
+    const res = await axios.post(`${BASE_URL}/chat`, {
       question: input,
       filePath: rawPath,
     });
