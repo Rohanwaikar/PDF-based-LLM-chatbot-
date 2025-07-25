@@ -7,7 +7,7 @@ import fs from 'fs';
 import { handlePDFVectorization, handleQuery } from './chat.js';
 
 const app = express();
-const PORT = 5002;
+const PORT = process.env.PORT || 3001;
 const uploadDir = path.resolve('./uploads');
 
 if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir);
