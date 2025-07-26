@@ -40,7 +40,7 @@ your venv (virtual environment).
 3) Make sure it's running at http://localhost:11434
 
 🧑‍💻 5. Author
-Made with ❤️ by Rohan Waikar
+-> Made with ❤️ by Rohan Waikar
 
 
 
