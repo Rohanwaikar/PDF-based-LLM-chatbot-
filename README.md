@@ -19,25 +19,25 @@ get contextual, citation-linked answers from a local Ollama LLM — completely o
 free of API keys.
 
 🖥️ 2. Setup Backend (Express + Python) 
-cd backend
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-npm install
-Start backend server: node index.js
-Note: Make sure you have faiss, sentence-transformers, and ollama installed inside 
+1) cd backend
+2) python3 -m venv venv
+3) source venv/bin/activate  # On Windows: venv\Scripts\activate
+4) pip install -r requirements.txt
+5) npm install
+6) Start backend server: node index.js
+7) Note: Make sure you have faiss, sentence-transformers, and ollama installed inside 
 your venv (virtual environment).
 
 
 🌐 3. Setup Frontend
-cd frontend
-npm install
-npm run dev
+1) cd frontend
+2) npm install
+3) npm run dev
 
 🤖 4. Run Ollama LLM
-Install Ollama from https://ollama.com, then:
-ollama run llama3
-Make sure it's running at http://localhost:11434
+1) Install Ollama from https://ollama.com, then:
+2) ollama run llama3
+3) Make sure it's running at http://localhost:11434
 
 🧑‍💻 5. Author
 Made with ❤️ by Rohan Waikar
